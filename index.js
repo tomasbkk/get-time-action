@@ -8,7 +8,7 @@ async function main() {
         console.log('time zone', timezone)
         const offset_GMT = new Date().getTimezoneOffset(); // 本地时间和格林威治的时间差，单位为分钟
         const nowDate = new Date().getTime(); // 本地时间距 1970 年 1 月 1 日午夜（GMT 时间）之间的毫秒数
-        const time = new Date(nowDate + (offset_GMT * 60 * 1000) + (timezone * 3600 * 1000)).format("yyyy-MM-dd-hh-mm-ss");
+        const time = new Date(nowDate + (offset_GMT * 60 * 1000) + (timezone * 3600 * 1000)).format("yyyy-MM-dd-hh_mm_ss");
         console.log('time', time)
         core.setOutput("time", time);
 

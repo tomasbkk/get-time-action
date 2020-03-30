@@ -19,7 +19,6 @@
   "homepage": "https://github.com/nanzm/get-time-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.3",
-    "dayjs": "^1.8.23",
-    "dayjs-plugin-utc": "^0.1.2"
+    "dayjs": "^1.8.23"
   }
 }

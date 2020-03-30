@@ -7,8 +7,12 @@ branding:
 inputs:
   timeZone:
     description: 'time zone'
-    required: true
+    required: false
     default: 8
+  format:
+    description: 'timestamp format'
+    required: false
+    default: 'YYYY-MM-DD-HH-mm-ss'
 outputs:
   time:
     description: 'current time'

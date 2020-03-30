@@ -4,25 +4,29 @@ Get the time in the specified time zone
 
 ## Example usage
 
-
 ```yaml
       - name: Get Time
         id: time
         uses: nanzm/get-time-action@master
         with:
           timeZone: 8
+          format: 'YYYY-MM-DD-HH-mm-ss'
+      - name: Usage
+        env:
+          TIME: "${{ steps.time.outputs.time }}"
+        run: |
+          echo $TIME
 ```
 
 ## Inputs
 
 | Parameter  | Required | Info                                                         |
 | ---------- | -------- | ------------------------------------------------------------ |
-| `timeZone` | `true`   | time Zone  Default: 8 ,East is positive and West is negative. e.g.: UTC/GMT+08:00 set timeZone: 8 |
+| `timeZone` | `false`  | time Zone  Default: 8                                        |
+| `format`   | `false`  | timestamp format string                                      |
 
 
 ## Outputs
-
-
 
 | Parameter   | Info                                                         |
 | ---------- | ------------------------------------------------------------ |

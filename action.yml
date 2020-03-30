@@ -1,4 +1,4 @@
-name: 'Get Time Action'
+name: 'Get Timestamp Action'
 description: 'Get the time in the specified time zone'
 author: 'nanzm'
 branding:

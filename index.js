@@ -1,5 +1,8 @@
 const core = require('@actions/core');
 const dayjs = require('dayjs');
+const dayjsPluginUTC = require('dayjs/plugin/utc')
+
+dayjs.extend(dayjsPluginUTC)
 
 async function main() {
 	try {

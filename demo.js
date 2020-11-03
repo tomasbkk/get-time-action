@@ -3,5 +3,5 @@ const dayjsPluginUTC = require('dayjs/plugin/utc')
 
 dayjs.extend(dayjsPluginUTC)
 
-let a = dayjs().format('YYYY-MM-DD-HH-mm-ss')
+let a = dayjs().format()
 console.log(a)

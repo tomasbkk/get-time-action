@@ -8,11 +8,11 @@ inputs:
   timeZone:
     description: 'time zone'
     required: false
-    default: 8
+    default: 0
   format:
     description: 'timestamp format'
     required: false
-    default: 'YYYY-MM-DD-HH-mm-ss'
+    default: ''
 outputs:
   time:
     description: 'current time'

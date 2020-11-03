@@ -22,8 +22,8 @@ Get the time in the specified time zone
 
 | Parameter  | Required | Info                                                         |
 | ---------- | -------- | ------------------------------------------------------------ |
-| `timeZone` | `false`  | time Zone  Default: 8                                        |
-| `format`   | `false`  | timestamp format string                                      |
+| `timeZone` | `false`  | time Zone  Default: 0                                        |
+| `format`   | `false`  | timestamp format string  Default: ''                                    |
 
 
 ## Outputs

@@ -1,0 +1,40 @@
+name: test
+on:
+  push:
+    branches:
+      - master
+jobs:
+  release:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [10]
+
+    steps:
+      - name: Checkout Git Source
+        uses: actions/checkout@v1
+
+      - name: test1
+        id: time1
+        uses: nanzm/get-time-action@v1.1
+
+      - name: test1-output
+        env:
+          TIME: "${{ steps.time1.outputs.time }}"
+        run: |
+          echo $TIME
+
+      - name: test2
+        id: time2
+        uses: nanzm/get-time-action@v1.1
+        with:
+          timeZone: 8
+          format: 'YYYY-MM-DD_HH:mm:ss'
+
+      - name: test2-output
+        env:
+          TIME: "${{ steps.time2.outputs.time }}"
+        run: |
+          echo $TIME

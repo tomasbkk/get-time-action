@@ -4,7 +4,7 @@
   "description": "Get the time in the specified time zone",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js"
+    "build": "npx ncc build index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "dependencies": {
     "@actions/core": "^1.2.3",
     "dayjs": "^1.8.23"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.22.3"
   }
 }

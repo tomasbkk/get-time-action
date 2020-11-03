@@ -7,7 +7,7 @@ Get the time in the specified time zone
 ```yaml
       - name: Get Time
         id: time
-        uses: nanzm/get-time-action@v1.0
+        uses: nanzm/get-time-action@v1.1
         with:
           timeZone: 8
           format: 'YYYY-MM-DD-HH-mm-ss'

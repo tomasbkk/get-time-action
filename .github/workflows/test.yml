@@ -1,10 +1,10 @@
-name: test
+name: test-action
 on:
   push:
     branches:
       - master
 jobs:
-  release:
+  test:
     runs-on: ${{ matrix.os }}
 
     strategy:

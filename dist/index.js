@@ -271,7 +271,7 @@ exports.getInput = getInput;
  * @param     value    value to store
  */
 function setOutput(name, value) {
-    command_1.issueCommand('set-output', { name }, value);
+    process.stdout.write(`echo "{name}={value}" >> $GITHUB_OUTPUT\n`);
 }
 exports.setOutput = setOutput;
 //-----------------------------------------------------------------------
